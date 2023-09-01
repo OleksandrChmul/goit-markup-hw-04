@@ -52,6 +52,18 @@ a {
 .navigation-list .navigation-link {
   padding: 24px 0 24px;
 }
+
+.navigation-link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -96,6 +108,11 @@ a {
   color: #404bbf;
 }
 
+.navigation-link .navigation-link-first {
+  position: relative;
+  color: #404bbf;
+}
+
 .contacts {
   font-style: normal;
   margin-left: auto;
@@ -115,6 +132,11 @@ a {
 
 .contacts .contacts-link:hover,
 .contacts .contacts-link:focus {
+  color: #404bbf;
+}
+
+.navigation-link .navigation-link-first {
+  position: relative;
   color: #404bbf;
 }
 
