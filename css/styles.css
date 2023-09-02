@@ -289,6 +289,20 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
+}
+
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.link-our-team {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 /* Portfolio */
