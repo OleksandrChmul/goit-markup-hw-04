@@ -53,17 +53,6 @@ a {
   padding: 24px 0 24px;
 }
 
-.navigation-link::after {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -112,6 +101,19 @@ a {
 .navigation-link-first {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-link-first::after {
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
 }
 
 .contacts {
@@ -244,11 +246,6 @@ a {
   background: var(--CLOUD, #f4f4fd);
   margin-bottom: 8px;
   height: 112px;
-}
-
-.feature-icons {
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 /* Our Team */
