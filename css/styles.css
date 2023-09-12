@@ -512,7 +512,6 @@ a {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   color: var(--WHITE, #fff);
   text-align: center;
   font-size: 16px;
@@ -528,8 +527,8 @@ a {
 .footer-form-icon {
   margin-left: 16px;
 }
-
-.modal-form {
+/* ===============BACKDROP============= */
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -538,7 +537,17 @@ a {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* ==============MODAL WINDOW============= */
 
 .modal-window {
   position: absolute;
@@ -700,6 +709,7 @@ a {
 
 .privacy-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .send-form-btn {
@@ -717,4 +727,6 @@ a {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
