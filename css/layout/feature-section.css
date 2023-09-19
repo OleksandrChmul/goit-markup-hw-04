@@ -11,7 +11,7 @@
 }
 
 .list-title {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: var(--NAVY-BLUE, #fafafa);
   text-align: center;
   align-self: stretch;
   font-size: 36px;
